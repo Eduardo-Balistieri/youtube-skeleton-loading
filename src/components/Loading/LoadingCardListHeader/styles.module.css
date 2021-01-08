@@ -1,0 +1,6 @@
+.titleSkeleton {
+    width: 10vw !important;
+    max-width: 130px;
+    height: 23px;
+    border-radius: 2px;
+}

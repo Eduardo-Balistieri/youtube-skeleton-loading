@@ -1,0 +1,31 @@
+.desktopOptionsSkeleton {
+    display: none;
+}
+
+.mobileOptionsSkeleton {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.optionSkeleton {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+@media (min-width: 1100px) {
+    .desktopOptionsSkeleton {
+        display: flex;
+        column-gap: 1rem;
+    }
+    
+    .mobileOptionsSkeleton {
+        display: none;
+    }
+
+    .optionSkeleton {
+        width: 2rem;
+        height: 2rem;
+    }
+}

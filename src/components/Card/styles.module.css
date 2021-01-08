@@ -1,0 +1,141 @@
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    height: 52vw;
+    width: 100%;
+}
+
+.videoInformation {
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.authorProfile {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.textDetails {
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.textDetails > h5 {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.textDetails > p {
+    color: var(--black);
+    opacity: 0.6;;
+    font-size: 14px;
+}
+
+.textDetails > p > :nth-child(even) {
+    margin: 0 6px;
+}
+
+.icon {
+    width: 2rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon > svg {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+
+
+
+@media (min-width: 800px) {
+    .card {
+        flex-direction: row;
+        padding: 0.8rem;
+        border-bottom: 1px solid var(--transparent-light-gray);
+    }
+    .thumbnail {
+        height: 110px;
+        width: 200px;
+        flex-shrink: 0;
+    }
+
+    .videoInformation {
+        flex-direction: column-reverse;
+        margin-left: 0.5rem;
+    }
+
+    .textDetails {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .icon { 
+        display: none;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    
+    .card {
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: none;
+    }
+    .thumbnail {
+        height: calc(100vw / 11);
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .videoInformation {
+        flex-direction: row;
+        margin-left: 0;
+        width: 90%;
+        padding: 0.8rem 0;
+    }
+
+    .authorProfile {
+        display: none;
+    }
+
+    .textDetails {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .textDetails > h5 {
+        color: black;
+        font-weight: 500;
+    }
+
+    .textDetails > p {
+        color: var(--light-gray);
+        opacity: 1;
+    }
+
+    .textDetails > p > :first-child {
+        display: block;
+        line-height: 1.2rem;
+    }
+    .textDetails > p > :nth-child(2) {
+        display: none;
+    }
+    
+}
